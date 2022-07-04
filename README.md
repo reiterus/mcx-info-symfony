@@ -1,4 +1,4 @@
-# Card of the Ministry of Agriculture of Russia
+# Card of the Russia Agriculture Ministry
 Summary information on the Ministry of Agriculture of the Russian Federation
 as a Symfony bundle that provides a REST API URL
 with response in json format.
@@ -18,8 +18,8 @@ The `app` directory contains ready-to-use files,
 which need to be moved to the appropriate directories
 your project, which will lead to the completion of the default information.
 
-## JSON-ответ
-The output can be output in two formats:
+# Response
+The output can be show in two formats:
 - in one line
 - beautifully formatted
 ```json
@@ -48,7 +48,7 @@ The output can be output in two formats:
 }
 ```
 
-## Settings
+# Usage
 URL setting
 ```yaml
 # connecting config with route
@@ -74,3 +74,27 @@ services:
         tags:
             - { name: 'tag_mcx_info_persons' }
 ```
+
+# Installation
+You can install the bundle in two ways
+
+From packagist.org
+```shell
+composer require reiterus/mcx-info-symfony
+```
+
+From GitHub repository
+```json
+{
+ "repositories": [
+  {
+   "type": "vcs",
+   "url": "https://github.com/reiterus/mcx-info-symfony.git"
+  }
+ ]
+}
+```
+
+# License
+
+This library is released under the [MIT license](LICENSE).

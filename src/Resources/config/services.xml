@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services
+        http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="reiterus_mcx_info.mcx_info_controller"
+                 class="Reiterus\McxInfoBundle\Controller\McxInfoController"
+                 public="true">
+            <call method="setContainer">
+                <argument type="service"
+                          id="Psr\Container\ContainerInterface"/>
+            </call>
+            <argument type="service" id="reiterus_mcx_info.all_main_data"/>
+            <argument type="tagged_iterator" tag="tag_mcx_info_persons"/>
+        </service>
+        <service id="Reiterus\McxInfoBundle\Controller\McxInfoController"
+                 alias="reiterus_mcx_info.mcx_info_controller"/>
+
+        <!-- Persons Data -->
+        <service id="reiterus_mcx_info.all_persons_provider"
+                 class="Reiterus\McxInfoBundle\Util\PersonsProvider"
+                 public="false">
+            <tag name="tag_mcx_info_persons" />
+        </service>
+        <service id="reiterus_mcx_info.persons_provider"
+                 alias="reiterus_mcx_info.all_persons_provider"
+                 public="false"/>
+
+        <!-- Main Data -->
+        <service id="reiterus_mcx_info.all_main_data"
+                 class="Reiterus\McxInfoBundle\Util\MainData"
+                 public="false"/>
+        <service id="reiterus_mcx_info.main_data"
+                 alias="reiterus_mcx_info.all_main_data"
+                 public="false"/>
+    </services>
+</container>

@@ -1,0 +1,3 @@
+reiterus_mcx_info:
+  resource: '@McxInfoBundle/Resources/config/routes.xml'
+  prefix: /bundle/mcx/info

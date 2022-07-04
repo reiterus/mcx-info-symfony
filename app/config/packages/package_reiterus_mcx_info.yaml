@@ -1,0 +1,12 @@
+reiterus_mcx_info:
+    contacts:
+        - 'Тел.: +7 (495) 607-80-00'
+        - 'Факс: +7 (495) 607-83-62'
+        - 'info@mcx.gov.ru'
+    pretty: true
+
+services:
+    app.reiterus_mcx_info_persons:
+        class: App\Util\McxPersons
+        tags:
+            - { name: 'tag_mcx_info_persons' }

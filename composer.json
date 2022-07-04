@@ -1,0 +1,23 @@
+{
+    "name": "reiterus/mcx-info-symfony",
+    "description": "Information card of the Russian Federation Agriculture Ministry as Symfony Bundle",
+    "keywords": ["reiterus", "agriculture", "Russia", "symfony", "bundle"],
+    "type": "symfony-bundle",
+    "version": "1.0.0",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pavel Vasin",
+            "email": "reiterus@yandex.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Reiterus\\McxInfoBundle\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4"
+    }
+}

@@ -19,5 +19,10 @@ namespace Reiterus\McxInfoBundle\Util;
  */
 interface PersonsProviderInterface
 {
+    /**
+     * List of officials
+     *
+     * @return array
+     */
     public function getList(): array;
 }

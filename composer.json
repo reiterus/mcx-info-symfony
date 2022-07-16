@@ -3,7 +3,7 @@
     "description": "Information card of the Russian Federation Agriculture Ministry as Symfony Bundle",
     "keywords": ["reiterus", "agriculture", "Russia", "symfony", "bundle"],
     "type": "symfony-bundle",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "minimum-stability": "dev",
     "license": "MIT",
     "authors": [

@@ -19,8 +19,31 @@ namespace Reiterus\McxInfoBundle\Util;
  */
 interface MainDataInterface
 {
+    /**
+     * Get title
+     *
+     * @return string
+     */
     public function getTitle(): string;
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
     public function getDescription(): string;
+
+    /**
+     * Get address
+     *
+     * @return string
+     */
     public function getAddress(): string;
+
+    /**
+     * Get site
+     *
+     * @return string
+     */
     public function getSite(): string;
 }

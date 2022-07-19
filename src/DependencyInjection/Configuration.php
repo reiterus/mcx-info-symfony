@@ -23,6 +23,7 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 class Configuration implements ConfigurationInterface
 {
     /**
+     * @codeCoverageIgnore
      * Building the configuration tree
      *
      * @return TreeBuilder

@@ -57,12 +57,14 @@ class McxInfoExtension extends Extension
         $configuration = $this->getConfiguration($configs, $container);
         $config = $this->processConfiguration($configuration, $configs);
 
+        // @codeCoverageIgnoreStart
         if (isset($config[self::MAIN_DATA])) {
             $container->setAlias(
                 'reiterus_mcx_info.all_main_data',
                 $config[self::MAIN_DATA]
             );
         }
+        // @codeCoverageIgnoreEnd
 
         $definition = $container->getDefinition(self::CONTROLLER);
 

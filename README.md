@@ -95,6 +95,23 @@ From GitHub repository
 }
 ```
 
+# Tests
+
+To run tests with visual code coverage, launch the command as follows:
+
+```shell
+XDEBUG_MODE=coverage ./vendor/phpunit/phpunit/phpunit \
+--configuration phpunit.xml \
+--testsuite default \
+--coverage-html coverage/
+```
+
+Test results will be saved in the `coverage` directory.
+
+![Coverage](coverage.png)
+
+**Tip**: `vendor/bin/phpunit --generate-configuration`
+
 # License
 
 This library is released under the [MIT license](LICENSE).
